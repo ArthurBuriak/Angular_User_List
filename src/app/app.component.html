@@ -1,0 +1,59 @@
+<div class="user-list-header"> 
+  Angular User List
+</div>
+<div class="user-list">
+  <div class="user-list-left">
+    <form>
+      <div class="user-list-block">
+        <div class="user-list-heading">
+          Login
+        </div>
+        <div class="user-list-input">
+          <input type="text" placeholder="Enter login" class="input-main" [value]="login" (change)="changeLogin($event)" />
+        </div>
+      </div>
+      <div class="user-list-block">
+        <div class="user-list-heading">
+          Password
+        </div>
+        <div class="user-list-input">
+          <input type="password" placeholder="Enter password" class="input-main" [value]="password" (input)="changePassword($event)" />
+        </div>
+      </div>
+      <div class="user-list-block">
+        <div class="user-list-heading">
+          Email
+        </div>
+        <div class="user-list-input">
+          <input type="email" placeholder="Enter email" class="input-main" [value]="email" (input)="changeEmail($event)" />
+        </div>
+      </div>
+      <div class="user-list-buttons">
+        <div class="user-list-button">
+          <button *ngIf="buttonsChange" class="add-user" (click)="addUser()">Add user</button>
+          <button *ngIf="!buttonsChange" class="edit-user" (click)="editUser()">Edit user</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="user-list-right">
+    <div class="user-list-panel">
+      <div class="user-list-hash">#</div>
+      <div class="user-list-login">Login</div>
+      <div class="user-list-password">Password</div>
+      <div class="user-list-email">Email</div>
+      <div class="user-list-edit">Edit</div>
+      <div class="user-list-delete">Delete</div>
+    </div>
+    <div class="user-list-display">
+      <div class="user-list-users" *ngFor="let item of usersArray; let i = index">
+        <div>{{ i + 1 }}</div>
+        <div>{{ parseData[i].mainLogin }}</div>
+        <div>{{ parseData[i].mainPassword }}</div>
+        <div>{{ parseData[i].mainEmail }}</div>
+        <div><button class="edit-button btn" (click)="editButton(i)">Edit</button></div>
+        <div><button class="delete-button btn" (click)="deleteUser(i)">Delete</button></div>
+      </div>
+    </div>
+  </div>
+</div>

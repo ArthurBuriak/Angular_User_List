@@ -1,0 +1,107 @@
+.user-list-header{
+    width: 100%;
+    padding: 15px 0;
+    background: silver;
+    font-size: 34px;
+    text-align: center;
+    border-bottom: 3px solid rgb(122, 121, 121);
+}
+
+.user-list{
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+}
+
+.user-list-left{
+    width: 49%;
+}
+
+.user-list-right{
+    width: 49%;
+}
+
+.user-list-heading{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.input-main{
+    padding: 15px 0 15px 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid silver;
+}
+
+.user-list-block{
+    margin-bottom: 30px;
+}
+
+.add-user{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border-radius: 15px;
+    border: none;
+    background: rgb(118, 185, 118);
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-user:hover{
+    background: rgb(94, 148, 94);
+}
+
+.user-list-panel{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px 0;
+    border-top: 3px solid silver;
+    border-bottom: 3px solid silver;
+}
+
+.user-list-users{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn{
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.edit-button{
+    background: rgb(221, 221, 114);
+    cursor: pointer;
+}
+
+.edit-button:hover{
+    background: rgb(170, 170, 88);
+}
+
+.delete-button{
+    background: rgb(221, 114, 114);
+    cursor: pointer;
+}
+
+.delete-button:hover{
+    background: rgb(170, 88, 95);
+}
+
+.edit-user{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border-radius: 15px;
+    border: none;
+    background: rgb(118, 149, 185);
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-user:hover{
+    background: rgb(94, 107, 148);
+}
